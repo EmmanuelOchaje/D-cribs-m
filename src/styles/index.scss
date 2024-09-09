@@ -1,0 +1,93 @@
+* {
+  font-family: "Poppins", system-ui;
+  margin: 0;
+}
+.lay {
+  height: 50vh;
+  background-image: url("./images/pexels-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgb(207, 207, 207);
+  background-blend-mode: darken;
+  color: white;
+}
+button {
+  background-color: green;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.header {
+  padding-top: 1.5rem;
+  color: white;
+}
+@import "./nav";
+@import "./hero";
+@import "./item";
+.latest {
+  margin-top: 2rem;
+  /* display: grid;
+  gap: 1vw;
+  grid-template-columns: repeat(4, 1fr); */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  .latest-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+@import "./offers";
+@import "./newsletter";
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35vh;
+  background-color: black;
+  ul {
+    display: flex;
+    li {
+      margin: 1rem;
+    }
+  }
+  div {
+    display: block;
+    // justify-content: space-between;
+    color: white;
+    // width: 50%;
+    text-align: center;
+    span {
+      margin: 1rem;
+      &:nth-child(1) {
+        svg {
+          color: pink;
+          font-size: 1.3rem;
+          font-weight: bold;
+        }
+      }
+      &:nth-child(2) {
+        svg {
+          color: rgb(0, 183, 255);
+          font-size: 1.3rem;
+          font-weight: bold;
+        }
+      }
+      &:nth-child(3) {
+        svg {
+          color: blue;
+          font-size: 1.3rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.offers {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  background-image: url("./images/pexels-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgb(207, 207, 207);
+  background-blend-mode: darken;
+  color: white;
+  h2 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  button {
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: white;
+    margin-top: 2rem;
+    height: 2.5rem;
+    // width: 6rem;
+    background-color: green;
+  }
+}

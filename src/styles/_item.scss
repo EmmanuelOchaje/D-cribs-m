@@ -1,0 +1,29 @@
+.item {
+  width: 16rem;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+  border: 1px solid rgb(202, 202, 202);
+  font-size: 0.7rem;
+  p {
+    font-weight: bold;
+    margin: 0.5rem;
+  }
+  .spn {
+    color: green;
+    font-size: 0.9rem;
+  }
+}
+.item-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: inherit;
+  height: 14rem;
+  width: inherit;
+  img {
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+  }
+  // position: absolute;
+}
