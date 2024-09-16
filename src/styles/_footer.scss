@@ -1,0 +1,44 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35vh;
+  background-color: black;
+  ul {
+    display: flex;
+    li {
+      margin: 1rem;
+    }
+  }
+  div {
+    display: block;
+    // justify-content: space-between;
+    color: white;
+    // width: 50%;
+    text-align: center;
+    span {
+      margin: 1rem;
+      &:nth-child(1) {
+        svg {
+          color: pink;
+          font-size: 1.3rem;
+          font-weight: bold;
+        }
+      }
+      &:nth-child(2) {
+        svg {
+          color: rgb(0, 183, 255);
+          font-size: 1.3rem;
+          font-weight: bold;
+        }
+      }
+      &:nth-child(3) {
+        svg {
+          color: blue;
+          font-size: 1.3rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
