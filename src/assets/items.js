@@ -1,21 +1,21 @@
 const items = [
   {
-    src: "./images/image1.jpg",
+    src: "src/assets/images/image1.jpg",
     price: 1200,
     location: "New Jersey",
   },
   {
-    src: "./images/image2.jpg",
+    src: "src/assets/images/image2.jpg",
     price: 2000,
     location: "New Orleans",
   },
   {
-    src: "./images/image3.jpg",
+    src: "src/assets/images/image3.jpg",
     price: 20000,
     location: "Atlanta",
   },
   {
-    src: "./images/image4.jpg",
+    src: "src/assets/images/image4.jpg",
     price: 12000,
     location: "Phildelphia",
   },

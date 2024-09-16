@@ -1,5 +1,5 @@
 import data from "../assets/Ints";
-import Item from "./Item";
+import Item from "./Tile";
 
 const Latestints = () => {
   return (

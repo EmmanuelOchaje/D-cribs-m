@@ -1,5 +1,13 @@
+import Navbar from "../component/Navbar";
+import CartItems from "../component/CartItems";
+
 const Cart = () => {
-  return <div></div>;
+  return (
+    <div>
+      <Navbar />
+      <CartItems />
+    </div>
+  );
 };
 
 export default Cart;

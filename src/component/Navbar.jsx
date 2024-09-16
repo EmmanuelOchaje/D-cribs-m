@@ -1,13 +1,16 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
+import { Context } from "../Context/Context";
 
 const Navbar = () => {
   const [menu, setMenu] = useState("");
+  const { totalCartItems } = useContext(Context);
+
   return (
     <div className="nav">
       <div>
         <Link to="/">
-          <h2 onClick={() => setMenu("")} className="header">
+          <h2 onClick={() => setMenu("")} className="head">
             D-cribs.
           </h2>
         </Link>
@@ -27,12 +30,12 @@ const Navbar = () => {
               Interior
             </Link>
           </li>
-          <li onClick={() => setMenu("exterior")}>
+          <li onClick={() => setMenu("furniture")}>
             <Link
-              to="/exterior"
-              className={menu === "exterior" ? "active" : ""}
+              to="/furniture"
+              className={menu === "furniture" ? "active" : ""}
             >
-              Exterior
+              Furniture
             </Link>
           </li>
         </ul>
@@ -46,8 +49,8 @@ const Navbar = () => {
           </li>
           <li>
             <Link to="/cart">
-              <img src="./images/cart.png" />
-              <div className="count">0</div>
+              <img src="/src/assets/images/cart.png" />
+              <div className="count">{totalCartItems()}</div>
             </Link>
           </li>
         </ul>

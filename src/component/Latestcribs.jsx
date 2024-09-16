@@ -1,5 +1,5 @@
 import data from "../assets/items";
-import Item from "./Item";
+import Item from "./Tile";
 const Latestcribs = () => {
   return (
     <div className="latest">

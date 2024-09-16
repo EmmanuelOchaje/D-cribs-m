@@ -4,7 +4,7 @@
 }
 .lay {
   height: 50vh;
-  background-image: url("./images/pexels-1.jpg");
+  background-image: url("../assets/images/pexels-1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -15,6 +15,12 @@
 }
 button {
   background-color: green;
+  cursor: pointer;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-size: 1rem;
 }
 a {
   text-decoration: none;
@@ -22,9 +28,10 @@ a {
 ul {
   list-style: none;
 }
-.header {
+.head {
   padding-top: 1.5rem;
   color: white;
+  margin-left: 2rem;
 }
 @import "./nav";
 @import "./hero";
@@ -46,48 +53,84 @@ ul {
 }
 @import "./offers";
 @import "./newsletter";
+@import "./footer";
 
-.footer {
+.category-div {
+  .descrip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    p {
+      font-size: 2.5rem;
+      font-weight: 500;
+      margin-left: 3rem;
+      width: 30vw;
+    }
+    img {
+      width: 20rem;
+      height: 17rem;
+    }
+  }
+}
+.cat-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  img {
+    width: inherit;
+    height: inherit;
+  }
+}
+@import "./idxsignup";
+@import "./signup";
+
+.breadcrum {
+  font-size: 1rem;
+  span {
+    font-size: 0.7rem;
+    margin: 0.3rem;
+    color: green;
+  }
+}
+.proddisp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  text-align: center;
+  img {
+    // border: 1px solid black;
+    width: auto;
+    height: 20rem;
+  }
+  p {
+    text-align: center;
+    font-weight: bold;
+  }
+}
+.cart-items {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 35vh;
-  background-color: black;
-  ul {
-    display: flex;
-    li {
-      margin: 1rem;
-    }
-  }
-  div {
-    display: block;
-    // justify-content: space-between;
-    color: white;
-    // width: 50%;
+  .mapped {
     text-align: center;
-    span {
-      margin: 1rem;
-      &:nth-child(1) {
-        svg {
-          color: pink;
-          font-size: 1.3rem;
-          font-weight: bold;
-        }
+    margin: 0.5rem;
+    img {
+      width: 10rem;
+      height: 6rem;
+    }
+    p {
+      font-size: 0.8rem;
+      span {
+        font-weight: bold;
       }
-      &:nth-child(2) {
-        svg {
-          color: rgb(0, 183, 255);
-          font-size: 1.3rem;
-          font-weight: bold;
-        }
-      }
-      &:nth-child(3) {
-        svg {
-          color: blue;
-          font-size: 1.3rem;
-          font-weight: bold;
-        }
-      }
+    }
+    button {
+      font-size: 0.8rem;
+      padding: 0.4rem;
     }
   }
 }
